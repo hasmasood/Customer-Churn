@@ -37,5 +37,5 @@ An extension of exploratory data analysis. Dictionary vectorizer was used to enc
 [Step3-MLDev.ipynb](https://github.com/hasmasood/Customer-Churn/blob/main/Step3-MLDev.ipynb)
 This describes the process of feature engineering, machine learning model development, assessment and visualization of predictive performance. A number of models are evaluated and hyperparameters tuned via grid search pipelines. The best model selected is later trained from scratch. Models, scaler function and dictionary vectorizer are exported using ```pickle``` in a single stacked file.
 
- [Step4-Deploy.ipynb](https://github.com/hasmasood/Customer-Churn/blob/main/Step4-Deploy.ipynb)
+[Step4-Deploy.ipynb](https://github.com/hasmasood/Customer-Churn/blob/main/Step4-Deploy.ipynb)
  This deploys the model both locally as well as web service and make predictions for a sample data. 
