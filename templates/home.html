@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Customer Churn Predictions</h1>
+
+     <!-- Get data to predict customer churn -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="gender" placeholder=gender" required="required" /><br>
+    	<input type="text" name="seniorcitizen" placeholder="seniorcitizen" required="required" /><br>
+        <input type="text" name="partner" placeholder="partner" required="required" /><br>
+        <input type="text" name="dependents" placeholder="dependents" required="required" /><br>
+        <input type="text" name="tenure" placeholder="tenure" required="required" /><br>
+        <input type="text" name="phoneservice" placeholder="phoneservice" required="required" /><br>
+        <input type="text" name="multiplelines" placeholder="multiplelines" required="required" /><br>
+        <input type="text" name="internetservice" placeholder="internetservice" required="required" /><br>
+        <input type="text" name="onlinesecurity" placeholder="onlinesecurity" required="required" /><br> 
+        <input type="text" name="onlinebackup" placeholder="onlinebackup" required="required" /><br> 
+        <input type="text" name="deviceprotection" placeholder="deviceprotection" required="required" /><br> 
+        <input type="text" name="techsupport" placeholder="techsupport" required="required" /><br> 
+        <input type="text" name="streamingtv" placeholder="streamingtv" required="required" /><br> 
+        <input type="text" name="streamingmovies" placeholder="streamingmovies" required="required" /><br> 
+        <input type="text" name="contract" placeholder="contract" required="required" /><br> 
+        <input type="text" name="paperlessbilling" placeholder="paperlessbilling" required="required" /><br> 
+        <input type="text" name="paymentmethod" placeholder="paymentmethod" required="required" /><br> 
+        <input type="text" name="monthlycharges" placeholder="monthlycharges" required="required" /><br> 
+        <input type="text" name="totalcharges" placeholder="totalcharges" required="required" /><br>        
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>
